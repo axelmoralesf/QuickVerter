@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="FileName" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quickverter.PrimaryController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="QuickVerter">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="130.0" text="Seleccionar archivo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnFile" layoutX="114.0" layoutY="163.0" mnemonicParsing="false" onAction="#btnFile_action" text="Archivo" />
+      <Label layoutX="43.0" layoutY="209.0" text="Tipo de archivo selecionado">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="typeFile" layoutX="60.0" layoutY="245.0" prefWidth="150.0" />
+      <Label layoutX="279.0" layoutY="176.0" text="Convertir a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="typeFileFinal" layoutX="407.0" layoutY="176.0" prefWidth="150.0" />
+      <Button fx:id="btnConvertir" layoutX="454.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnConvertir_action" text="Convertir" />
+      <Label fx:id="TextName" layoutX="3.0" layoutY="192.0" prefHeight="19.0" prefWidth="269.0" text="Nombre Archivo" textFill="#d0d0d0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
